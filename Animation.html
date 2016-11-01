@@ -11,7 +11,7 @@
 
      <!--Left skip -->
       <polygon points="500 150, 500 100, 450 125" fill="white" opacity="1">
-          <animate id="skip" attributeName="opacity" from="1" to="0" dur=0.5 begin="click" />
+          <animate id="skip" attributeName="opacity" from="1" to="0" dur="1" begin="click" />
       </polygon>
        <polygon points="550 150, 550 100, 500 125" fill="white"/>
 
@@ -21,17 +21,20 @@
       </polygon>
 
       <polygon points="1350 150, 1350 100, 1400 125" fill="white">
-       <animate id="skip" attributeName="opacity" from="1" to="0" dur=0.5 begin="click" />
+       <animate id="skip2" attributeName="opacity" from="1" to="0" dur="0.5" begin="click" />
       </polygon>
 
        <!--College dropout -->
       <text x="700" y="100" font-family="Muli" font-size="45" fill="white">The College Dropout</text>
       <image x="575"  y="200" width="700" height="700" opacity="1"           xlink:href="http://images.genius.com/0bffd93463afe53e7f651f72bedfc78b.1000x1000x1.jpg">
-        <animate attributeName="opacity" from="1" to="0" dur="1" begin="skip.end" />
+        <animate attributeName="opacity" from="1" to="0" dur="1" begin="skip.end" fill="freeze"/>
+        <animate attributeName="opacity" from="0" to="1" dur=1 begin="skip2.end" fill="freeze"/>
       </image>
+
       <!--MAAD City-->
       <image x="575" y="200" width="700" height="700" opacity="0" xlink:href="https://images.rapgenius.com/c4e385526c61c2fe1575e310521dc180.500x500x1.jpg">
-        <animate attributeName="opacity" from="0" to="1" dur="1" begin="skip.end" />
+        <animate attributeName="opacity" from="0" to="1" dur=1 begin="skip.end" fill="freeze"/>
+        <animate attributeName="opacity" from="0" to="1" dur=1 begin="skip2.end" fill="freeze"/>
       </image>
 
     </svg>
