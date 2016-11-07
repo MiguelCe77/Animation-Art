@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="Animation.css">
   </head>
   <body>
-    <svg width="100%" viewBox="0 0 2000 5000">
+    <svg width="100%" viewBox="0 0 2000 1000">
       <text x="800" y="40" font-family="Muli" font-size="50" fill="white">My Music</text>
 
 
@@ -17,74 +17,109 @@
 
       <!--Right skip -->
       <polygon points="1300 250, 1300 200, 1350 225" fill="white">
+         <animate id="skip" attributeName="opacity" from="1" to="0" dur="0.25" begin="5s; 10s; 15s; 20s; 25s; 30s; 35s; 40s; 45s;" />
       </polygon>
 
       <polygon points="1350 250, 1350 200, 1400 225" fill="white">
-       <animate id="skip" attributeName="opacity" from="1" to="0" dur="0.25" begin="5s; 10s; 15s; 20s" />
+       <animate id="skip" attributeName="opacity" from="1" to="0" dur="0.25" begin="5s; 10s; 15s; 20s; 25s; 30s; 35s; 40s; 45s;" />
       </polygon>
 
 
-       <!--College dropout -->
+       <!--MBDTF  -->
       <text  x="590" y="100" font-family="Muli" font-size="41" fill="white" opacity="1">
-        <animate attributeName="opacity" from="1" to="0" dur="0.25" begin="5s" fill="freeze"/>
+        <animate attributeName="opacity" from="1" to="0" dur="0.25" begin="5s; 25s;" fill="freeze"/>
+        <animate attributeName="opacity" from="0" to="1" dur="0.25" begin="20s" fill="freeze"/>
         My Beautiful Dark Twisted Fantasy</text>
 
       <text  x="750" y="130" font-family="Muli" font-size="30" fill="grey" opacity="1">
-          <animate attributeName="opacity" from="1" to="0" dur="0.25" begin="5s" fill="freeze"/>
+          <animate attributeName="opacity" from="1" to="0" dur="0.25" begin="5s; 25s;" fill="freeze"/>
+          <animate attributeName="opacity" from="0" to="1" dur="0.25" begin=" 20s;" fill="freeze"/>
       Kanye West - Gorgeous</text>
 
-      <image  x="575"  y="250" width="700" height="700" opacity="1"  xlink:href="https://buzzjunkies.files.wordpress.com/2010/11/kanye-west-my-beautiful-dark-twisted-fantasy-album-cover-5.png">
-        <animate id="college" attributeName="opacity" from="1" to="0" dur="0.5" begin="5s; coloring.end" fill="freeze"/>
+      <image  x="575"  y="275" width="700" height="700" opacity="1"  xlink:href="https://buzzjunkies.files.wordpress.com/2010/11/kanye-west-my-beautiful-dark-twisted-fantasy-album-cover-5.png">
+        <animate id="college" attributeName="opacity" from="1" to="0" dur="0.5" begin="5s; 25s" fill="freeze"/>
+        <animate id="college" attributeName="opacity" from="0" to="1" dur="0.5" begin="20s;" fill="freeze"/>
       </image>
 
       <!--MAAD City-->
 
 
       <text  x="700" y="100" font-family="Muli" font-size="45" fill="white" opacity="0">
-        <animate attributeName="opacity" from="0" to="1" dur="0.50" begin="5s" fill="freeze"/>
-        <animate attributeName="opacity" from="1" to="0" dur="0.50" begin="10s" fill="freeze"/>
+        <animate attributeName="opacity" from="0" to="1" dur="0.50" begin="5s; 25s" fill="freeze"/>
+        <animate attributeName="opacity" from="1" to="0" dur="0.50" begin="10s; 30s" fill="freeze"/>
         Good Kid MAAD City</text>
 
         <text  x="700" y="130" font-family="Muli" font-size="30" fill="grey" opacity="0">
-          <animate attributeName="opacity" from="0" to="1" dur="0.50" begin="5s" fill="freeze"/>
-          <animate attributeName="opacity" from="1" to="0" dur="0.50" begin="10s" fill="freeze"/>
+          <animate attributeName="opacity" from="0" to="1" dur="0.50" begin="5s; 25s" fill="freeze"/>
+          <animate attributeName="opacity" from="1" to="0" dur="0.50" begin="10s; 30s" fill="freeze"/>
           Kendrick Lamar - Money Trees</text>
 
 
-      <image  x="575" y="250" width="700" height="700" opacity="0" xlink:href="https://images.rapgenius.com/c4e385526c61c2fe1575e310521dc180.500x500x1.jpg">
-        <animate id="maad" attributeName="opacity" from="0" to="1" dur=0.5 begin="5s" fill="freeze" />
+      <image  x="575" y="275" width="700" height="700" opacity="0" xlink:href="https://images.rapgenius.com/c4e385526c61c2fe1575e310521dc180.500x500x1.jpg">
+        <animate id="maad" attributeName="opacity" from="0" to="1" dur=0.5 begin="5s; 25s" fill="freeze" />
+        <animate id="maad" attributeName="opacity" from="1" to="0" dur=0.5 begin="10s; 30s" fill="freeze" />
       </image>
 
       <!--Coloring Book-->
       <text  x="760" y="100" font-family="Muli" font-size="45" fill="white" opacity="0">
-        <animate attributeName="opacity" from="0" to="1" dur="0.50" begin="10s" fill="freeze"/>
-        <animate attributeName="opacity" from="1" to="0" dur="0.50" begin="15s" fill="freeze"/>
+        <animate attributeName="opacity" from="0" to="1" dur="0.50" begin="10s; 30s" fill="freeze"/>
+        <animate attributeName="opacity" from="1" to="0" dur="0.50" begin="15; 35s" fill="freeze"/>
         Coloring Book</text>
 
         <text  x="700" y="130" font-family="Muli" font-size="30" fill="grey" opacity="0">
-          <animate attributeName="opacity" from="0" to="1" dur="0.50" begin="10s" fill="freeze"/>
-          <animate attributeName="opacity" from="1" to="0" dur="0.50" begin="15s" fill="freeze"/>
+          <animate attributeName="opacity" from="0" to="1" dur="0.50" begin="10s; 30s" fill="freeze"/>
+          <animate attributeName="opacity" from="1" to="0" dur="0.50" begin="15s; 35s" fill="freeze"/>
           Chance the Rapper - No Problem</text>
 
-        <image id="coloring" x="575" y="250" width="700" height="700" opacity="0" xlink:href="http://images.genius.com/b17a54d05a3de269cc6ea53c3f71f73e.1000x1000x1.jpg">
-          <animate attributeName="opacity" from="0" to="1" dur=0.5 begin="10s" fill="freeze"/>
+        <image id="coloring" x="575" y="275" width="700" height="700" opacity="0" xlink:href="http://images.genius.com/b17a54d05a3de269cc6ea53c3f71f73e.1000x1000x1.jpg">
+          <animate attributeName="opacity" from="0" to="1" dur=0.5 begin="10s; 30s" fill="freeze"/>
+          <animate attributeName="opacity" from="1" to="0" dur=0.5 begin="15s; 35s" fill="freeze"/>
         </image>
 
         <!--IFYRTITL-->
         <text  x="595" y="100" font-family="Muli" font-size="41" fill="white" opacity="0">
-        <animate attributeName="opacity" from="0" to="1" dur="0.50" begin="15s" fill="freeze"/>
-          <animate attributeName="opacity" from="1" to="0" dur="0.50" begin="20s" fill="freeze"/>
+        <animate attributeName="opacity" from="0" to="1" dur="0.50" begin="15s; 35s;" fill="freeze"/>
+          <animate attributeName="opacity" from="1" to="0" dur="0.50" begin="20s; 40s" fill="freeze"/>
           If You're Reading This It's Too Late</text>
 
           <text  x="750" y="130" font-family="Muli" font-size="30" fill="grey" opacity="0">
-            <animate attributeName="opacity" from="0" to="1" dur="0.50" begin="15s" fill="freeze"/>
-            <animate attributeName="opacity" from="1" to="0" dur="0.50" begin="20s" fill="freeze"/>
+            <animate attributeName="opacity" from="0" to="1" dur="0.50" begin="15s; 35s;" fill="freeze"/>
+            <animate attributeName="opacity" from="1" to="0" dur="0.50" begin="20s; 40s" fill="freeze"/>
             Drake - Know Yourself</text>
 
-          <image id="coloring" x="575" y="250" width="700" height="700" opacity="0" xlink:href="https://images.genius.com/32c2f93dcc198154a992dd60a1c588c7.1000x1000x1.jpg">
-            <animate attributeName="opacity" from="0" to="1" dur=0.5 begin="15s" fill="freeze"/>
+          <image id="coloring" x="575" y="275" width="700" height="700" opacity="0" xlink:href="https://images.genius.com/32c2f93dcc198154a992dd60a1c588c7.1000x1000x1.jpg">
+            <animate attributeName="opacity" from="0" to="1" dur=0.5 begin="15s; 35s;" fill="freeze"/>
+            <animate attributeName="opacity" from="1" to="0" dur="0.50" begin="20s; 40s" fill="freeze"/>
           </image>
 
+
+<!-- Length-->
+          <rect  x="600" y="170" width="650" height="5"/>
+          <rect fill="white" x="600" y="160" width="5" height="25">
+            <animate attributeName="x" from="600" to="1245" dur="60s "/>
+          </rect>
+
+
+
+<!-- Volume-->
+          <rect  x="170" y="300" width="5" height="625"/>
+          <!-- + -->
+          <rect fill="white"  x="170" y="260" width="5" height="25">
+            <animate id="volup" attributeName="opacity" from="1" to="0" dur="1ms" begin="click"/>
+          </rect>
+          <rect fill="white"  x="160" y="270" width="25" height="5" opacity="1">
+          </rect>
+
+          <!-- - -->
+          <rect fill="white"  x="160" y="940" width="25" height="5" opacity="1">
+              <animate id="voldown" attributeName="opacity" from="1" to="0" dur="1ms" begin="click"/>
+          </rect>
+
+          <!-- Circle -->
+          <circle cx="172" cy="600" r="15" fill="white">
+            <animate attributeName="cy" from="600" to="500" dur="1ms" fill="freeze" begin="volup.end"/>
+            <animate attributeName"cy" from="600" to="700" dur="1ms" fill="freeze" begin="voldown.end"/>
+          </circle>
 
 
     </svg>
