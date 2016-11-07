@@ -108,6 +108,7 @@
             <animate id="volup" attributeName="opacity" from="1" to="0" dur="1ms" begin="click"/>
           </rect>
           <rect fill="white"  x="160" y="270" width="25" height="5" opacity="1">
+            <animate id="volup2" attributeName="opacity" from="1" to="0" dur="1ms" begin="click"/>
           </rect>
 
           <!-- - -->
@@ -117,10 +118,23 @@
 
           <!-- Circle -->
           <circle cx="172" cy="600" r="15" fill="white">
-            <animate attributeName="cy" from="600" to="500" dur="1ms" fill="freeze" begin="volup.end"/>
-            <animate attributeName"cy" from="600" to="700" dur="1ms" fill="freeze" begin="voldown.end"/>
+            <animate attributeName="cy" from="600" to="310" dur="1ms" fill="freeze" begin="volup.end"/>
+            <animate attributeName="cy" from="600" to="310" dur="1ms" fill="freeze" begin="volup2.end"/>
+            <animate attributeName"cy" from="310" to="700" dur="1ms" fill="freeze" begin="voldown.end"/>
           </circle>
 
+
+<rect x="575"  y="275" width="700" height="700" opacity="0" fill="white">
+  <animate id="hoverinfo" attributeName="y" from="275" to="275" begin="mouseover" />
+</rect>
+
+  <text  x="1400" y="700" font-family="Muli" font-size="35" fill="white" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="1s" begin="hoverinfo.end" fill="freeze"/> Click the + to raise volume!
+  </text>
+
+  <text  x="1400" y="700" font-family="Muli" font-size="35" fill="white" opacity="1">
+  <animate attributename="opacity" from="1" to="0" dur='0.25s' begin="hoverinfo.end" fill="freeze"/>   Hover over the art.
+  </text>
 
     </svg>
   </body>
